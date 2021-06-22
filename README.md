@@ -1,6 +1,6 @@
 Trabalho1 Introdução:
 
-O programa é similar a um site de loja de tenis, com, por exemplo, o site da netshoes. Informa o tipo da marca,cor,gênero, tamanho, valor, numeração, com o objetivo de ajudar a pessoa/cliente a localizar examente a peça que deseja.
+O programa é similar a um site de loja de tenis, com, por exemplo, o site da netshoes. Informa o tipo da marca,cor,gênero, tamanho, valor, numeração, com o objetivo de ajudar a pessoa/cliente a localizar exatamente a peça que deseja.
 
 
 #Projeto_loja-de-tênis
