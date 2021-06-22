@@ -3,7 +3,7 @@ Trabalho1 Introdução:
 O programa é similar a um site de loja de tenis, com, por exemplo, o site da netshoes. Informa o tipo da marca,cor,gênero, tamanho, valor, numeração, com o objetivo de ajudar a pessoa/cliente a localizar exatamente a peça que deseja.
 
 
-#Projeto_loja-de-tênis
+#Projeto_loja_de_tênis
 | Nome do campo | Tipo | Descrição |
 |---|---|---|
 | Tipo_de_tênis | Cadeia de Caracteres | Tipo do tênis, se ele é de Corrida, para academia, um esportivo para basquete etc |
