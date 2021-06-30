@@ -1,6 +1,6 @@
 Trabalho1 Introdução:
 
-O programa é similar a um site de loja esportiva, como, por exemplo, o da Centauro. Informa o tipo de peça, marca, cor, gênero, tamanho, valor, numeração, coleção, seu ano de lançamento e estilo, com o objetivo de ajudar a pessoa/cliente a localizar examente a peça que deseja.
+O programa é similar a um site de loja esportiva, como, por exemplo, o da Centauro. Informa o tipo de peça, marca, cor, gênero, tamanho, valor, numeração, tipo de logo, seu ano de lançamento e garantia do fornecedor, com o objetivo de ajudar a pessoa/cliente a localizar examente a peça que deseja.
 
 
 
@@ -15,5 +15,5 @@ O programa é similar a um site de loja esportiva, como, por exemplo, o da Centa
 | Valor | Real | Preço da peça |
 | Numero_da_peca | Inteiro | Número que a peça foi cadastrada |
 | Tipo_de_Logo | Cadeia de Caracteres | Tipo de Logo, se ela é bordada,etc |
-| Ano_de_lancamento | Inteiro | Ano em que a peça foi lançada no mercado |
+| Composição_do_tecido | Cadei de Caracteres | De que tecido a peça foi feita poliéster, algodão etc |
 | Garantia_do_Fornecedor | Inteiro | Garantia que o fornecedor aplica ao produto|
