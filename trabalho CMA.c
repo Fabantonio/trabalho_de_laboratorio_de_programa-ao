@@ -24,7 +24,7 @@ int main()
     {
         do
         {
-            //Escolha do tipo de peça
+            //Escolha do tipo de peÃ§a
             printf("-Escolha o tipo de peca desejado-\n\n");
             printf("A - Blusa - RS120.00\nB - Calca - RS90.00\nC - Camisa - RS80.00\nD - Camiseta - RS65.00\nE - Short - RS40.00\nF - Tenis - RS180.00\n\n");
             printf("Opcao: ");
@@ -134,6 +134,7 @@ int main()
             case 'g':
             case 'G':
                 strcpy(cor, "Rosa");
+            break;
             default:
                 printf("Opcao Invalida!!!\n");
                 break;
@@ -235,7 +236,7 @@ int main()
                 scanf("%d", &tamanho);
             }
 
-            //Numero da peça
+            //Numero da peÃ§a
             printf("Digite o numero da peca: ");
             scanf("%d", &numero_da_peca);
 
@@ -286,7 +287,7 @@ int main()
 
             printf("Obrigada pela compra, o que deseja fazer agora?\n\n");
             printf("1 - Finalizar compra\n2 - Cancelar compra\n");
-            printf("3- Continuar comprando\n\nOpção; ");
+            printf("3- Continuar comprando\n\nOpÃ§Ã£o; ");
             scanf("%d", &encerrar);
 
             if (encerrar == 1)
