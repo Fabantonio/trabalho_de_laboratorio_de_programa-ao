@@ -17,7 +17,7 @@ typedef struct
     int garantia_do_fornecedor;
 } Produto;
 
-Produto pesquisaProduto()
+Produto insereProduto(int i)
 {
     Produto prod;
     printf("Digite o tipo de peca: ");
@@ -73,8 +73,9 @@ Produto pesquisaProduto()
     }
 
     //Numero da peça
-    printf("Digite o numero da peca: ");
-    scanf("%d", &prod.numero_da_peca);
+    /*printf("Digite o numero da peca: ");
+    scanf("%d", &prod.numero_da_peca);*/
+    prod.numero_da_peca = i;
 
     while (prod.numero_da_peca < 0)
     {
@@ -90,7 +91,7 @@ Produto pesquisaProduto()
 
 void imprimeCompra(Produto prod)
 {
-    printf("\n-----Detalhes da compra-----");
+    printf("\n-----Detalhes do produto-----");
     printf("\n");
     printf("\n");
     printf("Tipo de peca: ");
@@ -129,48 +130,63 @@ int main()
 {
 
     int resp;
-    char opcao, aux;
-    int encerrar;
+    char opcao=0, aux;
+    int encerrar=3;
+    Produto p[MAX];
+    int i = 0, id;
 
     do
     {
         do
         {
-            Produto p;
-            p = pesquisaProduto();
+
+            
+
+            printf("Bem vindo ao nosso sistema de produtos esportivos, o que deseja aqui?\n\n");
+            printf("1 - Inserir Produto\n2 - Consultar produto pelo id\n");
+            printf("3- Editar produto pelo id\n");
+            printf("4- Sair\n\nOpção; ");
+
+            scanf("%d", &resp);
+            scanf("%c", &aux);
+            if (resp==1)
+            {
+                printf("Produto de numero: %d\n", i );
+                p[i] = insereProduto(i);
+                printf("\n-----Produto inserido com sucesso-----\n");
+                system("pause");
+            }else if (resp==2)
+            {
+                printf("Digite o numero do produto para consulta: ");
+                scanf("%d", &id);
+                imprimeCompra(p[id]);
+                system("pause");
+            }else if (resp==3)
+            {
+                printf("Digite o ID do produto que deseja editar: ");
+                scanf("%d", &id);
+                scanf("%c", &aux);
+                p[id] = insereProduto(id);
+                printf("\n-----Produto editado com sucesso-----\n");
+                system("pause");
+            }else if (resp==4)
+            {
+                printf("Saindo...");
+                system("pause");
+                encerrar=0;1
+            }
+            
         
+
+            
+            
             system("cls");
-
-            imprimeCompra(p);
-
-            printf("Obrigada pela compra, o que deseja fazer agora?\n\n");
-            printf("1 - Finalizar compra\n2 - Cancelar compra\n");
-            printf("3- Continuar comprando\n\nOpção; ");
-            scanf("%d", &encerrar);
-
-            if (encerrar == 1)
-            {
-                printf("Compra finalizada com sucesso!!!\n");
-            }
-            else if (encerrar == 2)
-            {
-                printf("Compra cancelada\n");
-            }
-            else if (encerrar == 3)
-            {
-                printf("Continuar comprando\n");
-            }
-            else
-            {
-                printf("Opcao Invalida!!!\n");
-            }
-            system("pause");
-            system("cls");
+            i++;
         } while (encerrar == 3);
         printf("\n\t\t\tDigite 0 para mudar o cliente: ");
-        scanf("%d", &resp);
+        scanf("%d", &opcao);
         system("pause");
         system("cls");
-    } while (resp == 0);
+    } while (opcao == 0);
     return 0;
 }
